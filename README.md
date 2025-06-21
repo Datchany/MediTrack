@@ -102,7 +102,7 @@ All protected routes attach the Authorization: Bearer <token> header
 **🩺 Doctors Panel**
 ![Doctors_Panel](https://github.com/user-attachments/assets/077819a6-eb5b-40ab-b8b5-519b3d7e13b7)
 
-**Users Info**
+**ℹ️ Users Info**
 ![user_page](https://github.com/user-attachments/assets/e9a378db-9a1a-430e-b326-c7a6ff8d60d9)
 
 
@@ -124,18 +124,8 @@ All protected routes attach the Authorization: Bearer <token> header
 - `GET /api/appointments/` – List all appointments
 - `POST /api/appointments/` – Book a new appointment
 
-
-## ☁️ Deployment (Optional)
-
-To deploy your backend and frontend:
-
-### 🔧 Render (Backend)
-1. Push your backend code to GitHub.
-2. Create a new Web Service on [Render](https://render.com).
-3. Set environment variables for DB and Django settings.
-
 **Build commands:**
-
+```bash
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py collectstatic
