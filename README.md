@@ -38,7 +38,7 @@
 
 ## 🛠️ Setup Instructions
 
-### 🔙 Backend (Django)
+**### 🔙 Backend (Django)**
 
 
 # 1. Navigate to backend folder
@@ -62,7 +62,7 @@ python manage.py createsuperuser
 python manage.py runserver
 
 
-**🔜 Frontend (React)**
+****🔜 Frontend (React)****
 
 # 1. Navigate to frontend folder
 cd frontend
