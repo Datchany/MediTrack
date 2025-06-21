@@ -103,6 +103,9 @@ All protected routes attach the Authorization: Bearer <token> header
 **🔐 Login Page**
 ![login page](https://github.com/user-attachments/assets/ffa8da83-84f4-42b0-8b53-5af9bfe5ecc7)
 
+**Home page**
+![Home_page](https://github.com/user-attachments/assets/ee5647ad-efaf-4cb2-9444-aaa9d876e202)
+
 
 **🔄 Change Password**
 ![change_password](https://github.com/user-attachments/assets/e5a9c551-b67a-4424-becd-95cfe65e5a1a)
