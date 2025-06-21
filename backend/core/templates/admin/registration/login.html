@@ -1,0 +1,35 @@
+{% extends "admin/base_site.html" %}
+{% load static i18n %}
+
+{% block title %}Healthcare Management{% endblock %}
+
+{% block content %}
+<div id="content" class="login" style="text-align: center;">
+    <h1 style="font-size: 24px; margin-bottom: 20px;">🏥 Healthcare Management</h1>
+
+    {% if form.errors %}
+        <p class="errornote">
+            {% trans "Your username and password didn't match. Please try again." %}
+        </p>
+    {% endif %}
+
+   <form action="{{ form_url }}" method="post" id="login-form" style="display: inline-block; text-align: left;" autocomplete="off">
+    {% csrf_token %}
+    
+    <div class="form-row">
+        {{ form.username.label_tag }}<br>
+        <input type="text" name="username" id="id_username" autocomplete="off" value="" required>
+    </div>
+    <br>
+    <div class="form-row">
+        {{ form.password.label_tag }}<br>
+        <input type="password" name="password" id="id_password" autocomplete="new-password" value="" required>
+    </div>
+    <br>
+    <div class="submit-row">
+        <input type="submit" value="{% trans 'Log in' %}">
+    </div>
+</form>
+
+</div>
+{% endblock %}

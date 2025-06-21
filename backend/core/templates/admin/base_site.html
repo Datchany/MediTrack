@@ -1,0 +1,98 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}🏥 MediTrack {% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/admin_custom.css' %}">
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #1a0404;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown-menu a {
+            color: rgb(237, 228, 228);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .profile-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #0a5275;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+
+    <div style="display: flex; align-items: center;">
+        <img src="{% static 'css/img/medicore_logo.png' %}" alt="MediCore Logo" style="height: 40px; margin-right: 10px;">
+        <h1 id="site-name" style="margin: 0; font-size: 24px;">MediCore</h1>
+    </div>
+    
+{% endblock %}
+
+{% block usertools %}
+<div class="dropdown">
+    <button class="dropdown-toggle">
+        <div class="profile-icon">{{ user.get_username|slice:":1" }}</div>
+        <span>{{ user.get_username }}</span>
+    </button>
+    <div class="dropdown-menu">
+        <a href="{% url 'admin:password_change' %}">Change Password</a>
+        <a href="{% url 'admin:logout' %}">Log Out</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer style="background-color: #0a5275; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span>📍 MediCore Health Systems, Chennai, India</span>
+        <span>📞 +91-9876543210</span>
+        <span>📧 support@medicore.in</span>
+        <span>&copy; 2025 MediCore. All rights reserved.</span>
+    </div>
+</footer>
+
+{% endblock %}
