@@ -101,20 +101,25 @@ All protected routes attach the Authorization: Bearer <token> header
 
 
 **🔐 Login Page**
-
-![login page](https://github.com/user-attachments/assets/66983abe-21cf-4395-b8d1-48fc0ce3b9fb)
+![login page](https://github.com/user-attachments/assets/ffa8da83-84f4-42b0-8b53-5af9bfe5ecc7)
 
 
 **🔄 Change Password**
-![Change password](https://github.com/user-attachments/assets/a3508e43-c59c-45c4-ba92-f61b713a5848)
-
-
+![change_password](https://github.com/user-attachments/assets/e5a9c551-b67a-4424-becd-95cfe65e5a1a)
 
 **📅 Appointments**
 
-![Appointments](https://github.com/user-attachments/assets/f614fef2-9f6f-4e7a-a7ab-4a2d2cd4ecfb)
+![Appointments](https://github.com/user-attachments/assets/dc96f868-a884-4356-a8af-2a8cff2155b6)
 
-![users](https://github.com/user-attachments/assets/c1a8e48c-394c-4ecb-81b9-4b0414125a11)
+**users**
+![users](https://github.com/user-attachments/assets/873fc591-bdd2-4e87-9e36-f67105b2901b)
+
+**Doctors_panel**
+![Doctors_Panel](https://github.com/user-attachments/assets/077819a6-eb5b-40ab-b8b5-519b3d7e13b7)
+
+**Users Info**
+![user_page](https://github.com/user-attachments/assets/e9a378db-9a1a-430e-b326-c7a6ff8d60d9)
+
 
 **
 📡 API Documentation**
